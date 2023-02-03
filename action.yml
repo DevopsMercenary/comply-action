@@ -13,6 +13,6 @@ inputs:
   jira_password:
     required: false
     description: Password (or API token) for JIRA account
-  comply_folder:
+  comply_path:
     description: 'Folder path to switch to to find the Comply workspace'
     required: false
