@@ -1,7 +1,7 @@
 # FROM strongdm/comply:latest
 FROM golang:latest
 
-RUN go get github.com/strongdm/comply
+RUN go install github.com/strongdm/comply@latest
 
 COPY entrypoint.sh /entrypoint.sh
 
