@@ -1,14 +1,11 @@
 #!/bin/bash
 
-set -x
-
-env | sort
-
-pwd
-
-ls -la
-
 cd $GITHUB_WORKSPACE
+
+if [[ -n $INPUT_COMPLY_PATH ]]; then
+    echo "changing to sub-directory $INPUT_COMPLY_PATH"
+    cd $INPUT_COMPLY_PATH
+fi
 
 if [ -n "$INPUT_JIRA_USERNAME" ]; then
     echo "Setting JIRA username"
