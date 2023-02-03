@@ -4,6 +4,10 @@ set -x
 
 env | sort
 
+pwd
+
+ls -la
+
 cd $GITHUB_WORKSPACE
 
 if [ -n "$INPUT_JIRA_USERNAME" ]; then
