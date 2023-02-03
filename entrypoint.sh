@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 cd $GITHUB_WORKSPACE
 
 if [ -n "$INPUT_JIRA_USERNAME" ]; then
